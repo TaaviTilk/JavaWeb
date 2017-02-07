@@ -1,0 +1,38 @@
+<ng-include src="'menu.html'"></ng-include>
+<br>
+<br>
+
+
+<form ngnoform="">
+
+    <table class="form-table">
+        <tbody>
+        <tr>
+            <td>Eesnimi:</td>
+            <td><input id="first-name" ng-model="vm.firstName" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Perekonnanimi:</td>
+            <td><input id="last-name" ng-model="vm.lastName" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input id="eMail" ng-model="vm.eMail" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Sünniaeg:</td>
+            <td><input id="synniaeg" ng-model="vm.synniaeg" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Aadress:</td>
+            <td><input id="aadress" ng-model="vm.aadress" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2"><br>
+                <a id="save-link" href ng-click="vm.addNew()">Salvesta</a>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>

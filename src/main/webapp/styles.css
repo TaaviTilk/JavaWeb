@@ -1,0 +1,24 @@
+body {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #333;
+    width:500px;
+}
+
+#menu {
+    margin: 0 auto;
+    padding: 0px 0px 15px 0px;
+    display: inline;
+}
+
+#menu li {
+    text-align: left;
+    display: inline;
+    list-style: none;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #999;
+}
+
+#menu li a {
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+<ng-include src="'menu.html'"></ng-include>
+<br>
+<br>
+
+
+
+<form ngnoform="">
+id: {{vm.id}}
+    <table class="form-table">
+        <tbody>
+        <tr>
+            <td>Eesnimi:</td>
+            <td><input ng-model="vm.firstName"></td>
+        </tr>
+        <tr>
+            <td>Perekonnanimi:</td>
+            <td><input ng-model="vm.lastName" value="{{vm.lastName}}" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input ng-model="vm.eMail" value="{{vm.eMail}}" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Sünniaeg:</td>
+            <td><input id="synniaeg" ng-model="vm.synniaeg" value="{{vm.synniaeg}}" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td>Aadress:</td>
+            <td><input id="aadress" ng-model="vm.aadress" value="{{vm.aadress}}" class="ng-untouched ng-pristine ng-valid"></td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2"><br>
+                <a id="save-link" href ng-click="vm.addNew()">MUUDA ANDMED</a>
+            </td>
+            <td align="left" colspan="1"><br>
+                <a id="delete-link" href ng-click="vm.deletePost(vm.id)">KUSTUTA</a>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
