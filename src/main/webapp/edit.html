@@ -18,11 +18,11 @@ id: {{vm.id}}
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input ng-model="vm.eMail" value="{{vm.eMail}}" class="ng-untouched ng-pristine ng-valid"></td>
+            <td><input type="email" ng-model="vm.eMail" value="{{vm.eMail}}" class="ng-untouched ng-pristine ng-valid"></td>
         </tr>
         <tr>
             <td>Sünniaeg:</td>
-            <td><input id="synniaeg" ng-model="vm.synniaeg" value="{{vm.synniaeg}}" class="ng-untouched ng-pristine ng-valid"></td>
+            <td><input type="date" data-date-format="DD MMMM YYYY" id="synniaeg" ng-model="vm.synniaeg" value="{{vm.synniaeg}}" class="ng-untouched ng-pristine ng-valid"></td>
         </tr>
         <tr>
             <td>Aadress:</td>

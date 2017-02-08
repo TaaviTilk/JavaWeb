@@ -12,10 +12,11 @@
     vm.firstName = null;
     vm.lastName = null;
     vm.eMail = null;
-    vm.synniaeg = null;
+    vm.synniaeg = new Date();
     vm.aadress = null;
     vm.addNew = addNew;
     vm.deletePost = deletePost;
+
 
 
 
