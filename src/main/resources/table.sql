@@ -6,7 +6,7 @@ CREATE TABLE CUSTOMER (
  first_name VARCHAR(255),
  last_name VARCHAR(255),
  email VARCHAR(255),
- synniaeg VARCHAR(255),
+ synniaeg TIMESTAMP,
  aadress VARCHAR (255)
 );
 

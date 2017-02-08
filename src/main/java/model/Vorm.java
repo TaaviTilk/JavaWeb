@@ -8,6 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -34,7 +36,7 @@ public class Vorm {
 
 
     @Column(name = "synniaeg")
-    private String synniaeg;
+    private Date synniaeg;
 
     @Column(name = "aadress")
     private String aadress;
@@ -66,8 +68,8 @@ public class Vorm {
     public void seteMail(String eMail) {this.eMail = eMail; }
     public String geteMail() {return eMail;}
 
-    public void setsynniaeg(String synniaeg) {this.synniaeg = synniaeg; }
-    public String getsynniaeg() {return synniaeg;}
+    public void setsynniaeg(Date synniaeg) {this.synniaeg = synniaeg; }
+    public Date getsynniaeg() {return synniaeg;}
 
     public void setaadress(String aadress) {this.aadress = aadress; }
     public String getaadress() {return aadress;}
